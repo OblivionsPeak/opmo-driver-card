@@ -233,10 +233,10 @@ select:disabled { opacity: .45; cursor: default; }
     <div class="form-group">
       <label>Card Theme</label>
       <div class="theme-group" id="theme-group">
-        <div class="theme-swatch selected" style="background:#c4a87a" data-theme="gold"     onclick="selectTheme('gold',this)"     title="Gold"></div>
+        <div class="theme-swatch"          style="background:#c4a87a" data-theme="gold"     onclick="selectTheme('gold',this)"     title="Gold"></div>
         <div class="theme-swatch"          style="background:#3fb950" data-theme="green"    onclick="selectTheme('green',this)"    title="Green"></div>
         <div class="theme-swatch"          style="background:#58a6ff" data-theme="blue"     onclick="selectTheme('blue',this)"     title="Blue"></div>
-        <div class="theme-swatch"          style="background:#f85149" data-theme="red"      onclick="selectTheme('red',this)"      title="Red"></div>
+        <div class="theme-swatch selected" style="background:#f85149" data-theme="red"      onclick="selectTheme('red',this)"      title="Red"></div>
         <div class="theme-swatch"          style="background:#bc8cff" data-theme="purple"   onclick="selectTheme('purple',this)"   title="Purple"></div>
         <div class="theme-swatch"          style="background:#e3b341" data-theme="yellow"   onclick="selectTheme('yellow',this)"   title="Yellow"></div>
       </div>
@@ -291,14 +291,14 @@ const CLASS_COLORS = {
 // ── State ─────────────────────────────────────────────────────────────────────
 let selectedClass    = '';
 let selectedCarClass = '';
-let selectedTheme    = 'gold';
+let selectedTheme    = 'red';
 let logoImg          = null;
 
 // Pre-load logo
 const _logo = new Image();
 _logo.onload = () => { logoImg = _logo; render(); };
 _logo.onerror = () => { logoImg = null; render(); };
-_logo.src = 'OpMo.webp';
+_logo.src = 'OpMo_eMotorsport_League_red_TPBG_NEG.png';
 
 // ── UI helpers ────────────────────────────────────────────────────────────────
 function selectClass(val, el) {
